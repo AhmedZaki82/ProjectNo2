@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ProjectNo2</string>
+    <string name="team_a">Team A</string>
+    <string name="team_b">Team B</string>
+    <string name="score_a">0</string>
+    <string name="score_b">0</string>
+    <string name="red_a">Red Cards: </string>
+    <string name="red_b">Red Cards: </string>
+    <string name="yellow_a">Yellow Cards: </string>
+    <string name="yellow_b">Yellow Cards: </string>
+    <string name="goal_a">Goal</string>
+    <string name="goal_b">Goal</string>
+    <string name="red_card_a">Red card</string>
+    <string name="red_card_b">Red card</string>
+    <string name="yellow_card_a">Yellow card</string>
+    <string name="yellow_card_b">Yellow card</string>
+    <string name="the_winner">Who is the winner?</string>
+    <string name="reset">Reset</string>
+
+
+
+
+
+
+</resources>

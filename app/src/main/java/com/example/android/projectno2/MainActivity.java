@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
     int yellowA = 0;
     int yellowB = 0;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

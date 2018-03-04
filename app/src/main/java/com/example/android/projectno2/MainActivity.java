@@ -33,10 +33,8 @@ public class MainActivity extends AppCompatActivity {
 
         final String oldTxtRedA = txtRedA.getText().toString();
         final String oldTxtRedB = txtRedB.getText().toString();
-
         final String oldTxtYellowA = txtYellowA.getText().toString();
         final String oldTxtYellowB = txtYellowB.getText().toString();
-
 
         Button btnGoalA = (Button) findViewById(R.id.btnGoalA);
         Button btnGoalB = (Button) findViewById(R.id.btnGoalB);
@@ -44,10 +42,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnRedB = (Button) findViewById(R.id.btnRedB);
         Button btnYellowA = (Button) findViewById(R.id.btnYellowA);
         Button btnYellowB = (Button) findViewById(R.id.btnYellowB);
-
-
         Button btnWinner = (Button) findViewById(R.id.btnWinner);
-
         Button btnReset = (Button) findViewById(R.id.btnReset);
 
         btnGoalA.setOnClickListener(new View.OnClickListener() {
@@ -124,11 +119,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 txtRedA.setText(oldTxtRedA + (redA = redA - redA));
                 txtRedB.setText(oldTxtRedB + (redB = redB - redB));
-
-
                 txtScoreA.setText((scoreA = scoreA - scoreA) + "");
                 txtScoreB.setText((scoreB = scoreB - scoreB) + "");
-
                 txtYellowA.setText(oldTxtYellowA + (yellowA = yellowA - yellowA));
                 txtYellowB.setText(oldTxtYellowB + (yellowB = yellowB - yellowB));
 

@@ -6,145 +6,159 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.projectno2.MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/med" />
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="50"
-            android:gravity="center"
-            android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/textView8"
-                style="@style/TxtTeamNameAndScoreAndCards"
-                android:text="@string/team_a"
-                android:textColor="@android:color/black"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/txtScoreA"
-                style="@style/TxtTeamNameAndScoreAndCards"
-                android:text="@string/score_a"
-                android:textColor="@android:color/black"
-                android:textSize="60sp" />
-
-            <TextView
-                android:id="@+id/txtRedA"
-                style="@style/TxtTeamNameAndScoreAndCards"
-                android:text="@string/red_a"
-                android:textColor="@android:color/holo_red_dark"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/txtYellowA"
-                style="@style/TxtTeamNameAndScoreAndCards"
-                android:text="@string/yellow_a"
-                android:textColor="?android:attr/colorPressedHighlight"
-                android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/med" />
 
             <Button
-                android:id="@+id/btnGoalA"
+                android:id="@+id/btnReset"
                 style="@style/Btn"
-                android:text="@string/goal_a"
-                android:textColor="@android:color/holo_green_dark" />
+                android:layout_below="@+id/btnWinner"
+                android:layout_centerHorizontal="true"
+                android:foregroundGravity="center"
+                android:text="@string/reset"
+                android:textColor="@android:color/black" />
 
             <Button
-                android:id="@+id/btnRedA"
+                android:id="@+id/btnWinner"
                 style="@style/Btn"
-                android:text="@string/red_card_a"
-                android:textColor="@android:color/holo_red_dark" />
+                android:layout_below="@+id/linearLayout"
+                android:layout_centerHorizontal="true"
+                android:text="@string/the_winner"
+                android:textColor="@color/colorPrimaryDark" />
 
-            <Button
-                android:id="@+id/btnYellowA"
-                style="@style/Btn"
-                android:text="@string/yellow_card_a"
-                android:textColor="?android:attr/colorActivatedHighlight" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout">
 
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="50"
-            android:gravity="center"
-            android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView8"
+                        style="@style/TxtTeamNameAndScoreAndCards"
+                        android:text="@string/team_a"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/textView9"
-                style="@style/TxtTeamNameAndScoreAndCards"
-                android:text="@string/team_b"
-                android:textColor="@android:color/black"
-                android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/txtScoreA"
+                        style="@style/TxtTeamNameAndScoreAndCards"
+                        android:text="@string/score_a"
+                        android:textColor="@android:color/black"
+                        android:textSize="60sp" />
 
-            <TextView
-                android:id="@+id/txtScoreB"
-                style="@style/TxtTeamNameAndScoreAndCards"
-                android:text="@string/score_b"
-                android:textColor="@android:color/black"
-                android:textSize="60sp" />
+                    <TextView
+                        android:id="@+id/txtRedA"
+                        style="@style/TxtTeamNameAndScoreAndCards"
+                        android:text="@string/red_a"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/txtRedB"
-                style="@style/TxtTeamNameAndScoreAndCards"
-                android:text="@string/red_b"
-                android:textColor="@android:color/holo_red_dark"
-                android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/txtYellowA"
+                        style="@style/TxtTeamNameAndScoreAndCards"
+                        android:text="@string/yellow_a"
+                        android:textColor="?android:attr/colorPressedHighlight"
+                        android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/txtYellowB"
-                style="@style/TxtTeamNameAndScoreAndCards"
-                android:text="@string/yellow_b"
-                android:textColor="?android:attr/colorPressedHighlight"
-                android:textSize="20sp" />
+                    <Button
+                        android:id="@+id/btnGoalA"
+                        style="@style/Btn"
+                        android:text="@string/goal_a"
+                        android:textColor="@android:color/holo_green_dark" />
 
-            <Button
-                android:id="@+id/btnGoalB"
-                style="@style/Btn"
-                android:text="@string/goal_b"
-                android:textColor="@android:color/holo_green_dark" />
+                    <Button
+                        android:id="@+id/btnRedA"
+                        style="@style/Btn"
+                        android:text="@string/red_card_a"
+                        android:textColor="@android:color/holo_red_dark" />
 
-            <Button
-                android:id="@+id/btnRedB"
-                style="@style/Btn"
-                android:text="@string/red_b"
-                android:textColor="@android:color/holo_red_dark" />
+                    <Button
+                        android:id="@+id/btnYellowA"
+                        style="@style/Btn"
+                        android:text="@string/yellow_card_a"
+                        android:textColor="?android:attr/colorActivatedHighlight" />
 
-            <Button
-                android:id="@+id/btnYellowB"
-                style="@style/Btn"
-                android:text="@string/yellow_card_b"
-                android:textColor="?android:attr/colorActivatedHighlight" />
+                </LinearLayout>
 
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:orientation="vertical">
 
-    </LinearLayout>
+                    <TextView
+                        android:id="@+id/textView9"
+                        style="@style/TxtTeamNameAndScoreAndCards"
+                        android:text="@string/team_b"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
 
-    <Button
-        android:id="@+id/btnReset"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:foregroundGravity="center"
-        style="@style/Btn"
-        android:text="@string/reset"
-        android:textColor="@android:color/black" />
+                    <TextView
+                        android:id="@+id/txtScoreB"
+                        style="@style/TxtTeamNameAndScoreAndCards"
+                        android:text="@string/score_b"
+                        android:textColor="@android:color/black"
+                        android:textSize="60sp" />
 
-    <Button
-        android:id="@+id/btnWinner"
-        style="@style/Btn"
-        android:layout_above="@+id/btnReset"
-        android:layout_centerHorizontal="true"
-        android:text="@string/the_winner"
-        android:textColor="@color/colorPrimaryDark" />
+                    <TextView
+                        android:id="@+id/txtRedB"
+                        style="@style/TxtTeamNameAndScoreAndCards"
+                        android:text="@string/red_b"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txtYellowB"
+                        style="@style/TxtTeamNameAndScoreAndCards"
+                        android:text="@string/yellow_b"
+                        android:textColor="?android:attr/colorPressedHighlight"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/btnGoalB"
+                        style="@style/Btn"
+                        android:text="@string/goal_b"
+                        android:textColor="@android:color/holo_green_dark" />
+
+                    <Button
+                        android:id="@+id/btnRedB"
+                        style="@style/Btn"
+                        android:text="@string/red_b"
+                        android:textColor="@android:color/holo_red_dark" />
+
+                    <Button
+                        android:id="@+id/btnYellowB"
+                        style="@style/Btn"
+                        android:text="@string/yellow_card_b"
+                        android:textColor="?android:attr/colorActivatedHighlight" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>

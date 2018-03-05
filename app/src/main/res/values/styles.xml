@@ -6,4 +6,20 @@
         <!-- Background color of buttons in the app -->
         <item name="colorButtonNormal">#E8EAF6</item>
     </style>
+
+    <style name="TxtTeamNameAndScoreAndCards">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="Btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">12dp</item>
+    </style>
+    
 </resources>

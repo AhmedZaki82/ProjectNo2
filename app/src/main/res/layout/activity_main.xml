@@ -14,12 +14,6 @@
         app:srcCompat="@drawable/med" />
 
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="50"
-        android:orientation="horizontal"></LinearLayout>
-
-    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
@@ -33,70 +27,47 @@
 
             <TextView
                 android:id="@+id/textView8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:gravity="center"
+                style="@style/TxtTeamNameAndScoreAndCards"
                 android:text="@string/team_a"
                 android:textColor="@android:color/black"
                 android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/txtScoreA"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:gravity="center"
+                style="@style/TxtTeamNameAndScoreAndCards"
                 android:text="@string/score_a"
                 android:textColor="@android:color/black"
                 android:textSize="60sp" />
 
             <TextView
                 android:id="@+id/txtRedA"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:gravity="center"
+                style="@style/TxtTeamNameAndScoreAndCards"
                 android:text="@string/red_a"
                 android:textColor="@android:color/holo_red_dark"
                 android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/txtYellowA"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:gravity="center"
+                style="@style/TxtTeamNameAndScoreAndCards"
                 android:text="@string/yellow_a"
                 android:textColor="?android:attr/colorPressedHighlight"
                 android:textSize="20sp" />
 
             <Button
                 android:id="@+id/btnGoalA"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:gravity="center_horizontal"
-                android:padding="12dp"
+                style="@style/Btn"
                 android:text="@string/goal_a"
                 android:textColor="@android:color/holo_green_dark" />
 
             <Button
                 android:id="@+id/btnRedA"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:gravity="center_horizontal"
-                android:padding="12dp"
+                style="@style/Btn"
                 android:text="@string/red_card_a"
                 android:textColor="@android:color/holo_red_dark" />
 
             <Button
                 android:id="@+id/btnYellowA"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:padding="12dp"
+                style="@style/Btn"
                 android:text="@string/yellow_card_a"
                 android:textColor="?android:attr/colorActivatedHighlight" />
 
@@ -111,70 +82,47 @@
 
             <TextView
                 android:id="@+id/textView9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:gravity="center"
+                style="@style/TxtTeamNameAndScoreAndCards"
                 android:text="@string/team_b"
                 android:textColor="@android:color/black"
                 android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/txtScoreB"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:gravity="center"
+                style="@style/TxtTeamNameAndScoreAndCards"
                 android:text="@string/score_b"
                 android:textColor="@android:color/black"
                 android:textSize="60sp" />
 
             <TextView
                 android:id="@+id/txtRedB"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:gravity="center"
+                style="@style/TxtTeamNameAndScoreAndCards"
                 android:text="@string/red_b"
                 android:textColor="@android:color/holo_red_dark"
                 android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/txtYellowB"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:gravity="center"
+                style="@style/TxtTeamNameAndScoreAndCards"
                 android:text="@string/yellow_b"
                 android:textColor="?android:attr/colorPressedHighlight"
                 android:textSize="20sp" />
 
             <Button
                 android:id="@+id/btnGoalB"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:gravity="center_horizontal"
-                android:padding="12dp"
+                style="@style/Btn"
                 android:text="@string/goal_b"
                 android:textColor="@android:color/holo_green_dark" />
 
             <Button
                 android:id="@+id/btnRedB"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:gravity="center_horizontal"
-                android:padding="12dp"
+                style="@style/Btn"
                 android:text="@string/red_b"
                 android:textColor="@android:color/holo_red_dark" />
 
             <Button
                 android:id="@+id/btnYellowB"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:padding="12dp"
+                style="@style/Btn"
                 android:text="@string/yellow_card_b"
                 android:textColor="?android:attr/colorActivatedHighlight" />
 
@@ -184,25 +132,18 @@
 
     <Button
         android:id="@+id/btnReset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:foregroundGravity="center"
-        android:gravity="center_horizontal"
-        android:padding="12dp"
+        style="@style/Btn"
         android:text="@string/reset"
         android:textColor="@android:color/black" />
 
     <Button
         android:id="@+id/btnWinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/Btn"
         android:layout_above="@+id/btnReset"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="8dp"
-        android:gravity="center_horizontal"
-        android:padding="12dp"
         android:text="@string/the_winner"
         android:textColor="@color/colorPrimaryDark" />
 

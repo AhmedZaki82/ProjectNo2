@@ -11,10 +11,8 @@ public class MainActivity extends AppCompatActivity {
 
     int scoreA = 0;
     int scoreB = 0;
-
     int redA = 0;
     int redB = 0;
-
     int yellowA = 0;
     int yellowB = 0;
 
@@ -29,12 +27,10 @@ public class MainActivity extends AppCompatActivity {
         final TextView txtRedB = (TextView) findViewById(R.id.txtRedB);
         final TextView txtYellowA = (TextView) findViewById(R.id.txtYellowA);
         final TextView txtYellowB = (TextView) findViewById(R.id.txtYellowB);
-
         final String oldTxtRedA = txtRedA.getText().toString();
         final String oldTxtRedB = txtRedB.getText().toString();
         final String oldTxtYellowA = txtYellowA.getText().toString();
         final String oldTxtYellowB = txtYellowB.getText().toString();
-
         Button btnGoalA = (Button) findViewById(R.id.btnGoalA);
         Button btnGoalB = (Button) findViewById(R.id.btnGoalB);
         Button btnRedA = (Button) findViewById(R.id.btnRedA);
@@ -48,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 scoreA++;
-                txtScoreA.setText(scoreA + "");
+                txtScoreA.setText(String.valueOf(scoreA));
             }
         });
 
@@ -58,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 scoreB++;
-                txtScoreB.setText(scoreB + "");
+                txtScoreB.setText(String.valueOf(scoreB));
             }
         });
 
@@ -118,12 +114,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 txtRedA.setText(oldTxtRedA + (redA = redA - redA));
                 txtRedB.setText(oldTxtRedB + (redB = redB - redB));
-                txtScoreA.setText((scoreA = scoreA - scoreA) + "");
-                txtScoreB.setText((scoreB = scoreB - scoreB) + "");
+                txtScoreA.setText(String.valueOf((scoreA = scoreA - scoreA)));
+                txtScoreB.setText(String.valueOf((scoreB = scoreB - scoreB)));
                 txtYellowA.setText(oldTxtYellowA + (yellowA = yellowA - yellowA));
                 txtYellowB.setText(oldTxtYellowB + (yellowB = yellowB - yellowB));
-
-
             }
         });
 
